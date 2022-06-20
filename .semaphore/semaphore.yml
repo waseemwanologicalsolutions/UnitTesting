@@ -13,3 +13,13 @@ blocks:
             - checkout
             - swift build -v
             - swift test -v
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
+  - name: 'Block #3'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
